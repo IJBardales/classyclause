@@ -9,20 +9,23 @@
 <body>
 	<header>
 		<div class="col-xs-3">
+			<%= link_to root_path, :class => 'logo' do %>
 			<div class="bubble">
   				Have some wisecracks 
   				<br />
-  				to pass on
+  				to pass on?
 			</div>
+			<% end %>
 		</div>
 
 		<div class="col-xs-4 slogan">
 			Making laughs available all the time
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Add Wisecracks', '#' %>
+			<%= link_to 'Add Wisecracks', new_quote_path %>
 			<%= link_to 'About Me', '#' %>
 		</div>
+	<br />
 	<br />
 	<br />
 	<br />
@@ -38,7 +41,7 @@
 <div class="footer">
 	<div class="container">
 		<div class="col-xs-6">
-			<%= link_to	"This isn't enough, I need to laugh some more", "#", :class => 'next-quote' %>
+			<%= link_to	"This isn't enough, I need to laugh some more", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="co-xs-6 footer-blurb">
 			Proudly hacked in the Big Apple by Ingrid J
