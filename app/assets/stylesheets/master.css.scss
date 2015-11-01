@@ -1,3 +1,5 @@
+
+
 .clear {
 	clear: both;
 }
@@ -49,6 +51,8 @@ body{
   color: black;
   font-size: 25px;
   border-bottom: 2px solid #dfdfdf;
+  font-family: 'maiden_orangeregular', serif;
+  font-weight: bold;
 }
 
 header {
@@ -58,3 +62,14 @@ header {
 hr {
   clear: both;
 }
+
+h1 {
+  font-family: 'maiden_orangeregular', serif;
+  font-weight: bold;
+  font-size: 48px;
+
+}
+
+h2 {
+  font-family: 'nobilemedium_italic', serif;
+  }
