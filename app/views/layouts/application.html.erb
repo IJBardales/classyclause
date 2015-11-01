@@ -11,19 +11,17 @@
 		<div class="col-xs-3">
 			<%= link_to root_path, :class => 'logo' do %>
 			<div class="bubble">
-  				Have some wisecracks 
-  				<br />
-  				to pass on?
+  				Pass on some funny truths 
 			</div>
 			<% end %>
 		</div>
 
 		<div class="col-xs-4 slogan">
-			Making laughs available all the time
+			Sometimes the truth doesn't hurt, it's just funny
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Add Wisecracks', new_quote_path %>
-			<%= link_to 'About Me', '#' %>
+			<%= link_to 'Add Wisewords', new_quote_path %>
+			<%= link_to 'About', about_path %>
 		</div>
 	<br />
 	<br />
@@ -35,6 +33,11 @@
 <br class="clear" />
 
 <div class="container">
+	<% if flash[:error].present? %>
+	<div class="col-xs-10 col-xs-offset-1 alert alert-danger">
+		<%= flash[:error].html_safe %>
+	</div>
+	<% end %>
 	<%= yield %>
 </div>
 
