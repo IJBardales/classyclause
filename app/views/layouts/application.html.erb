@@ -17,21 +17,34 @@
 		</div>
 
 		<div class="col-xs-4 slogan">
-			Need a good laugh, you've come to the right place
+			Making laughs available all the time
 		</div>
 		<div class="col-xs-5 links">
 			<%= link_to 'Add Wisecracks', '#' %>
 			<%= link_to 'About Me', '#' %>
 		</div>
-		<br />
-		<br />
-		<br />
-		<br />
-	</header>
-	<hr />
-	<br class="clear" />
+	<br />
+	<br />
+	<br />
+	<br />
+</header>
+<hr />
+<br class="clear" />
 
-<%= yield %>
+<div class="container">
+	<%= yield %>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to	"This isn't enough, I need to laugh some more", "#", :class => 'next-quote' %>
+		</div>
+		<div class="co-xs-6 footer-blurb">
+			Proudly hacked in the Big Apple by Ingrid J
+		</div>
+	</div>
+</div>		
 
 </body>
 </html>
